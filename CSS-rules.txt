@@ -14,3 +14,4 @@ Vi skriver kommentarer för vad koden gör ovanför koden, vi skriver kommentare
 Vi jobbar efter Mobile First (på badhuset för att sedan utvärdera för de andra sidorna)
 Vi jobbar med nesting i CSS
 Vi använder främst px och %
+Test
