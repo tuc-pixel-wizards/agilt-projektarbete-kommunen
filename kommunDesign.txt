@@ -1,4 +1,4 @@
-vad Karin, Emil och Diyar kommit överens om.
+Vad Karin, Emil och Diyar kommit överens om.
 navigation från höger sida
 hero section med slogan och bild/video
 färg till header
@@ -8,4 +8,16 @@ A7D397
 F5EEC8
 D0D4CA
 fade in fade ut text i hero ex "välkommen till stad", "titta gärna vidare på sidan"
- 
+
+
+*************Filer och kataloger************
+index.html
+lediga_jobb.html
+utbildning.html
+naringsliv.html
+Kommun.html
+
+assets/css/style.css
+assets/images/
+assets/video/
+************************
