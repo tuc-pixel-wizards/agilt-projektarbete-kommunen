@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+:root {
+    --background: #eef0f7;
+    --background-footer: #A7D397;
+    --color: #434656;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/********* Start of Header ********/
+header {
+    margin-bottom: 1px;
+}
+
+
+.pw-theme-color {
+    background-color: #A7D397;
+}
+
+ 
+.header {
+    display: flex;
+}
+
+.header > div {
+    color: rgb(14, 13, 13);
+    margin: 10px;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+.header > div:first-child {
+    flex: 2;
+}
+
+.header > div:nth-child(2),
+.header > div:nth-child(3) {
+    flex: 1;
+}
+/********* End of the Header ********/
+
+ 
+
+
+/********* container & Objekt Alignment ********/
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.pw-center {
+    text-align: center;
+}
+
+.pw-right {
+    text-align: right;
+}
+
+.pw-left {
+    text-align: left;
+}
+
+
+/********* End Objekt Alignment ********/
+
+
+
+ 
+/********* Font Size ********/
+ 
+.pw-font {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.pw-font-size-10 {
+    font-size: 10px;
+}
+
+
+.pw-font-size-12 {
+    font-size: 12px;
+}
+
+.pw-font-size-14 {
+    font-size: 14px;
+}
+
+.pw-font-size-16 {
+    font-size: 16px;
+}
+
+.pw-font-size-18 {
+    font-size: 18px;
+}
+
+.pw-font-size-20 {
+    font-size: 20px;
+}
+
+.pw-font-size-22 {
+    font-size: 22px;
+}
+
+
+.pw-bold {
+    font-weight: 900;
+}
+/********* End Font ********/
+
+ 
+
+
+/********* Navigations delen ********/
+.pw-nav-bar {
+  display: none;  
+  position: absolute;
+  top: 10px;
+  right: 0;
+  padding: 20px;
+}
+ 
+.pw-nav {
+    overflow: hidden;
+}
+
+.pw-nav a {
+    float: left;
+    display: block;
+    color: #0e0c0c;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.pw-nav a:hover {
+    color: black;
+}
+
+.pw-nav a.active {
+    color: white;
+}
+
+.pw-nav .pw-nav-bar, #pw-nav-change {
+    display: none;
+}
+
+/********* End of the navigation ********/
+
+
+.search {
+    height: 40px;
+}
+.search-button {
+    height: 40px; margin-left: -54px;
+}
+
+#search-form {
+display: block;
+}
+
+ 
+
+/********* Hero section and animation********/
+.pw-herobg {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#pw-heroVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+#pw-heroText {
+    margin-top: 140px;
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    display: inline-block;
+}
+
+.pw-herobg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+#pw-heroText:after {
+    content: "";
+    animation: heroText 10s linear infinite;
+}
+
+@keyframes heroText {
+    0% {
+        content: "Välkommen till Grönviksdal";
+    }
+    50% {
+        content: "Titta gärna vidare på sidan";
+    }
+    100% {
+        content: "Välkommen";
+    }
+}
+
+/********* Hero section and animation********/
+
+ 
+
+
+.pw-titles span {
+    display: none;  /* Hide all by default */
+}
+
+
+
+.pw-titles .logo {
+    vertical-align: middle;
+}
+
+  
+
+
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .pw-titles .pw-large-title {
+        display: block; 
+  
+    }
+    
+}
+
+
+
+
+
+
+/*  Surfplatta */
+@media (min-width: 768px) and (max-width: 1023px) {
+ 
+    
+    .pw-titles .pw-medium-title {
+        display: block;
+ 
+    
+    }
+
+    pw-medium-title {
+     margin-top: -20px;
+    
+    }
+
+ 
+        
+}
+
+ 
+
+/* Mobila enheter*/
+@media (max-width: 767px) {
+ 
+    .pw-titles .pw-mobile-title {
+        display: block;
+ 
+    }
+
+    #search-form {
+        display:none;
+        }
+
+
+    .pw-nav a {
+        display: none;
+    }
+    #pw-nav-change + label .pw-nav-bar {
+        display: block;
+        float: right;
+    }
+    #pw-nav-change:checked ~ .pw-nav a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+
+    .pw-herobg {
+        height: 300px;
+    }
+
+    
+}
+
+
+
+  
