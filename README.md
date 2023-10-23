@@ -51,6 +51,3 @@ Att etablera ett fullt fungerande näringsliv är viktigt för kommunen, därfö
 
 Lediga jobb
 Kommunen har en del arbetslösa, på denna sida ska man kunna se lediga arbeten i kommunen.
-
-
--- Denna ändring är ett test
