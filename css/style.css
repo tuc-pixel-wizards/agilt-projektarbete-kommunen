@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+:root {
+--background: #eef0f7;
+--background-footer: #A7D397;
+--color: #434656;
+}
+
+body {
+margin: 0;
+padding: 0;
+}
+
+/********* Start of Header ********/
+header {
+margin-bottom: 1px;
+}
+
+.header {
+display: flex;
+}
+
+.header > div {
+color: rgb(14, 13, 13);
+margin: 10px;
+line-height: 75px;
+font-size: 30px;
+}
+
+.header > div:first-child {
+flex: 2;
+}
+
+.header > div:nth-child(2),
+.header > div:nth-child(3) {
+flex: 1;
+}
+
+/********* background-colors ********/
+.background-green { background-color: #A7D397;}
+.background-black {background-color:#000000;}
+.background-white {background-color:#FFFFFF;}
+.background-grey {background-color:#f8f3f8;}
+.background-blue {background-color:#025193;}
+.background-yellow {background-color:#eeca68;}
+
+
+.black {color:#000000;}
+.white {color:#FFFFFF;}
+.grey {color:#f8f3f8;}
+
+.container {
+max-width: 992px;
+margin: 0 auto; /* Top and bottom margins are 0, left and right margins are auto */
+}
+
+.center {    text-align: center;}
+.right {    text-align: right;}
+.left {    text-align: left;}
+
+/********* Margin ********/
+.margin-2 {
+margin-top: 2px;
+margin-bottom: 2px;
+}
+.margin-4 {
+margin-top: 4px;
+margin-bottom: 4px;
+}
+
+.margin-6 {
+margin-top: 6px;
+margin-bottom: 6px;
+margin-left: 6px;
+margin-right: 6px;
+}
+
+/*********effect********/
+.rounded-s {
+border-radius: 2px;
+}
+
+.rounded-m {
+border-radius: 8px;
+}
+.shadow-s {
+box-shadow: -1px 2px 10px 0px rgba(0,0,0,0.15);
+}
+
+.border-0 {
+    border: 0;
+}
+/********* Padding ********/
+.padding-2 {
+padding: 2px;
+}
+.padding-4 {
+padding: 4px;
+}
+
+.padding-6 {
+padding: 6px;
+}
+/********* Font Size ********/
+.font {
+font-family: 'Open Sans', sans-serif;
+}
+
+.font-size-12 {
+font-size: 12px;
+}
+
+.font-size-16 {
+font-size: 16px;
+}
+
+.font-size-18 {
+font-size: 18px;
+}
+
+.font-size-20 {
+font-size: 20px;
+}
+
+.font-size-22 {
+font-size: 22px;
+}
+
+
+.bold {
+font-weight: 900;
+}
+
+/* Länkar start*/
+a:link {
+text-decoration:none;
+color: black;
+}
+a:visited {
+text-decoration:none;
+color: black;
+}
+a:hover {
+    color: black;
+}
+
+/********* Navigations delen ********/
+.nav-bar {
+display: none;
+position: absolute;
+top: 10px;
+right: 0;
+padding: 15px;
+}
+
+.nav {
+overflow: hidden;
+}
+
+.nav a {
+float: left;
+display: block;
+color: #0e0c0c;
+text-align: center;
+padding: 15px;
+text-decoration: none;
+}
+
+.nav a:hover {
+color: black;
+}
+
+.nav a.active {
+color: white;
+}
+
+.nav .nav-bar, #nav-change {
+display: none;
+}
+
+/********* End of the navigation ********/
+
+
+.search {
+height: 40px;
+}
+.search-button {
+height: 40px; margin-left: -54px;
+}
+
+#search-form {
+display: block;
+}
+
+
+/********* Hero section and animation********/
+.herobg {
+position: relative;
+width: 100%;
+height: 450px;
+overflow: hidden;
+text-align: center;
+}
+
+#heroVideo {
+position: absolute;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -1;
+transform: translate(-50%, -50%);
+}
+
+#heroText {
+margin-top: 140px;
+position: relative;
+z-index: 1;
+color: white;
+text-align: center;
+background-color: rgba(0, 0, 0, 0.5);
+padding: 10px;
+display: inline-block;
+}
+
+.herobg::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: 0;
+background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+#heroText:after {
+content: "";
+animation: heroText 10s linear infinite;
+}
+
+@keyframes heroText {
+0% {
+content: "Välkommen till Grönviksdal";
+}
+50% {
+content: "Grönviksdal Drömmarnas Hemvist";
+}
+100% {
+content: "Staden, Där Framtiden Börjar";
+}
+}
+
+
+.arbetsansokan-form {
+    height: 40px;
+    width: 97%; 
+}
+ 
+.arbetsansokan-form-textarea {
+     width: 98%;
+}
+ 
+
+
+.img-responsive {
+    width: 100%;
+}
+
+/* Hero utbildning */ 
+.hero-others {
+    background-image: url('https://cdn.pixabay.com/photo/2014/03/12/18/45/boys-286245_1280.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 600px; 
+}
+
+.hero-text-others {
+    padding: 6px;
+     margin-bottom: 100px; 
+}
+
+
+
+/********* Hero section and animation********/
+.titles span {
+display: none;  /* Hide all by default */
+}
+
+
+.figure_footer {
+margin: 0; padding: 0;
+} 
+
+
+.titles .logo {
+vertical-align: middle;
+}
+/* ************ Grid kolumner row **********/
+/* *********Start**********/
+
+.row {
+display: grid;
+grid-gap: 10px;
+}
+.col-3 {
+grid-template-columns: repeat(3, 1fr);
+}
+/* *********End**********/
+ 
+ 
+.titles .large-title {
+    display: block;
+    }
+ 
+
+    .col-2 {
+        grid-template-columns: repeat(2, 1fr);
+        }
+@media screen and (max-width: 600px) {
+
+.titles .mobile-title {
+display: block;
+}
+
+.titles .large-title {
+    display: none;
+    }
+  
+.col-3 {
+grid-template-columns: repeat(2, 1fr);
+}
+
+.col-2 {
+    grid-template-columns: repeat(2, 1fr);
+    }
+
+ 
+
+.herobg {
+    height: 300px;
+}
+
+.hero-others{
+    height: 500px;
+}
+
+}
+
+
+
+@media screen and (max-width: 992px) {
+
+.titles .large-title {
+display: none;
+}
+
+        
+.titles .mobile-title {
+display: block;
+}
+
+#search-form {
+display:none;
+}
+.nav a {
+display: none;
+}
+#nav-change + label .nav-bar {
+display: block;
+float: right;
+}
+#nav-change:checked ~ .nav a {
+float: none;
+display: block;
+text-align: left;
+}
+.herobg {
+height: 300px;
+}
+.col-3 {
+grid-template-columns: repeat(1, 1fr);
+}
+
+.col-2 {
+    grid-template-columns: repeat(1, 1fr);
+    }
+    
+
+ 
+}
