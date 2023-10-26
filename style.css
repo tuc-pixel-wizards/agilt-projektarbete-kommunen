@@ -154,5 +154,9 @@ E8E9E8
         padding-bottom: 10px;
     }
 
+    .history p {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
 }
 
