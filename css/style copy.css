@@ -10,31 +10,32 @@
   --mild-gray: #E8E9E8;
 }
 
-*{ 
-    padding: 0;
-    margin: 0;
- 
-    box-sizing: border-box;
- 
- }
+
+
 
 .main{
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    min-height: 100%;
+    width: 350px;
+    background-color: var(--mild-gray);
+    border-radius: 30px;
     display: flex;
-    justify-content: center;
+    align-items: baseline;
+
 }
 
 #main-btns{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    
+    margin-top: 30px;
+    margin-bottom: 30px;
     flex-wrap: wrap;
     row-gap: 50px;
- 
-    width: 95%;
+    background-color: var(--mild-gray);
+    width: 99%;
 
     & a{
         display: flex;
@@ -51,14 +52,10 @@
         & h3{
             padding-bottom: 0;
         }
-
-        & p {
-            color: var(--off-white);
-        }
     }
 
     & article{
-        width: 100%;
+        width: 300px;
         border: none;
 
         & img{
@@ -70,14 +67,12 @@
 }
 
 #news-feed{
- 
-    width: 97%;
+    height: 200px;
+    width: 100%;
     background-color: var(--mild-gray);
     margin: auto;
     margin-bottom: 30px;
-    margin-top: 30px;
     overflow-x: hidden;
-    height: 220px;
     border: 10px solid var(--mild-gray);
 
     & #news-feed-buttons{
@@ -99,28 +94,22 @@
 
 }
 
-footer .container{
-    display: flex;
-    flex-direction: column;
-}
 
 @media screen and (min-width: 600px){
-
     .main{
         width: 100%;
    }
 
     #main-btns{
         flex-direction: row;
+        margin-left: 15px;
+        margin-right: 15px;
         justify-content: space-between;
-        width: 100%;
-        row-gap: 20px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        row-gap: 30px;
 
         .btn-layout{
             width: 50%;
- 
+            background-color: var(--mild-gray);
             display: flex;
             justify-content: center;
 
@@ -150,24 +139,26 @@ footer .container{
         & .news-button{
         height: 180px;
         padding: 0;
-        min-width: 150px;
 
 
 
         & h3{
             padding-left: 50px;
             padding-right: 50px;
-            }
+        }
         }
 
 
-    }
+}
+}
 }
 
-}
 
 @media screen and (min-width: 992px){
- 
+    .main{
+        width: 100%;
+        max-width: 1300px;
+ }
 
     #main-btns .btn-layout{
         width: 33%;
@@ -176,16 +167,7 @@ footer .container{
 #news-feed{
     max-width: 700px;
 }
-
-footer .container{
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1100px;
 }
-
-}
-
 
 
 
@@ -202,47 +184,10 @@ margin: 0;
 padding: 0;
 }
 
-.container {
-    max-width: 1300px;
-    margin: 0 auto;
-    width: 95%;
-    cursor: default;
-
-}
-    
-#date-bar{
-    width: 80%;
-}
-
-.activities{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: 95%;
-
-    & figure{
-        margin-bottom: 20px;
-    }
-}
-
-.h3-margin-bottom{
-    margin-bottom: 20px;
-}
-
-.h3-margin-top{
-    margin-top: 20px;
-}
-
-#l-j-margin{
-    margin: auto;
-    width: 97%;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-
 /********* Start of Header ********/
-
+header {
+margin-bottom: 1px;
+}
 
 .header {
 display: flex;
@@ -278,7 +223,11 @@ flex: 1;
 .white {color:#FFFFFF;}
 .grey {color:#f8f3f8;}
 
-
+.container {
+max-width: 1300px;
+margin: 0 auto;
+ 
+}
 
 .center {    text-align: center;}
 .right {    text-align: right;}
@@ -301,11 +250,6 @@ margin-top: 6px;
 margin-bottom: 6px;
 margin-left: 6px;
 margin-right: 6px;
-}
-
-.margin-t-b{
-    margin-top: 20px;
-    margin-bottom: 20px
 }
 
 /*********effect********/
@@ -418,19 +362,11 @@ display: none;
 height: 40px;
 }
 .search-button {
-height: 35px; 
-margin-left: -61px;
+height: 40px; margin-left: -54px;
 }
 
 #search-form {
 display: block;
-}
-
-
-
-.right button{
-    width: 50px;
-    cursor: pointer;
 }
 
 
@@ -516,7 +452,7 @@ content: "Staden, Där Framtiden Börjar";
 
 
 .overlappa-80 {
-    margin-top: -40px;
+    margin-top: -60px;
     position:   relative;
 
 }
@@ -537,8 +473,7 @@ content: "Staden, Där Framtiden Börjar";
 
 .hero-text-others {
     padding: 6px;
-    margin-bottom: 100px;
-    cursor: default;
+     margin-bottom: 100px;
 }
 
 
@@ -578,47 +513,6 @@ grid-template-columns: repeat(3, 1fr);
     .col-2 {
         grid-template-columns: repeat(2, 1fr);
         }
-
-.activities{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    & .box1, .box2, .box3{
-        width: 33%;
-    }
-
-    & p{
-        margin: auto;
-        width: 90%;
-    }
-
-    & img{
-        border-radius: 10px;
-        border: none;
-    }
-}
-
-.motion {
-
-    & img{
-        border-radius: 10px;
-        border: none;
-    }
-
-    & p{
-        margin: auto;
-    }
-    
-}
-
-.sport {
-    & img{
-        border-radius: 10px;
-        border: none;
-    } 
-}
-
 @media screen and (max-width: 600px) {
 
 .titles .mobile-title {
@@ -688,47 +582,6 @@ grid-template-columns: repeat(1, 1fr);
     grid-template-columns: repeat(1, 1fr);
     }
 
-.activities{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-
-    & .box1, .box2, .box3{
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    & img{
-        scale: 1.2;
-        margin-top: 20px;
-    }
-
-    & p {
-        margin: auto;
-        margin-top: 30px;
-        width: 90%;
-        
-
-    }
-}
-
-.motion {
-
-    & p{
-        margin: auto;
-        width: 90%;
-    }
-}
-
-#l-j-margin{
-    margin: auto;
-    width: 98%;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
 
 
 }
@@ -762,10 +615,7 @@ body {
 }
 
 .business-life {
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 95%;
+    margin: 15px;
     background-color: var(--color-5);
     border-radius: 10px;
     font-family: 'Open Sans', sans-serif;
@@ -773,25 +623,7 @@ body {
         & h1 {
             font-size: 50px;
             text-align: center;
-            margin-bottom: 10px;
-            cursor: default;
         }
-
-        & h2{
-            margin-top: 10px;
-            margin-bottom: 10px;
-            cursor: default;
-        }
-
-        & h3{
-            margin-bottom: 5px;
-            cursor: default;
-        }
-
-        & p{
-            cursor: default;
-        }
-
         & a {
             color: revert;
         }
@@ -807,15 +639,8 @@ body {
         & h2, p, section {
             padding: 0 10px;
         }
-
-        & p{
-            margin-bottom: 10px;
-        }
 }
 
-.business-life-section-ul {
-    margin-left: 20px;
-}
 .business-life-image {
     display: block;
     width: 100%;
@@ -852,10 +677,6 @@ body {
 
 .accordion {
     margin-bottom: 10px;
-
-    & :hover{
-        cursor: pointer;
-    }
 }
 
 .accordion .handle {
@@ -917,7 +738,7 @@ input[type=submit]:hover {
     }
 
     .business-life-introduction {
-        width: 100%;
+        width: 80%;
         margin: 0 auto 35px;
     }
 
@@ -928,20 +749,7 @@ input[type=submit]:hover {
     }
 
     .business-life-section {
-        width: 800px;
+        width: 600px;
         margin: 20px auto;
-    }
-
-    #l-j-margin{
-        margin: auto;
-        width: 99%;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-
-    .footer-bottom{
-        position: absolute;
-        bottom: 0;
-        width: 100%;
     }
 }
