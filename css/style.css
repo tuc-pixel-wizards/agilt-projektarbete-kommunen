@@ -100,6 +100,39 @@ footer .container{
     flex-direction: column;
 }
 
+#learning-platform{
+    background-color: var(--mild-gray);
+    width: 95%;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+
+    & a{
+        display: flex;
+        font-size: 16px;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    & img{
+        height: 45px;
+    }
+
+    & span{
+        color: #0000FF;
+
+    }
+
+        & span:hover{
+            text-decoration: underline;
+        }
+    
+
+}
+
 @media screen and (min-width: 600px){
 
     .main{
@@ -160,6 +193,20 @@ footer .container{
     }
 }
 
+#learning-platform{
+    & a{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+        & img{
+            height: 55px
+        }
+
+        & p{
+            font-size: larger;
+        }
+    }
 }
 
 @media screen and (min-width: 992px){
@@ -179,6 +226,25 @@ footer .container{
     width: 100%;
     max-width: 1100px;
 }
+
+#learning-platform{
+
+    max-width: 1235px;
+
+    & a{
+        padding-left: 30px;
+        padding-right: 30px;
+        justify-content: center;
+    }
+
+        & img{
+            height: 55px
+        }
+
+        & p{
+            font-size: larger;
+        }
+    }
 
 }
 
@@ -200,8 +266,7 @@ padding: 0;
 
 .container {
     max-width: 1300px;
-    margin: 0 auto;
-    width: 95%;
+    margin: auto;
     cursor: default;
 
 }
@@ -528,7 +593,7 @@ content: "Staden, Där Framtiden Börjar";
 
 }
 
-/* Hero utbildning */
+/* Utbildning */
 .hero-others {
     background-image: url('https://cdn.pixabay.com/photo/2014/03/12/18/45/boys-286245_1280.jpg');
     background-repeat: no-repeat;
@@ -540,15 +605,11 @@ content: "Staden, Där Framtiden Börjar";
     height: 600px;
 }
 
-
-
 .hero-text-others {
     padding: 6px;
     margin-bottom: 100px;
     cursor: default;
 }
-
-
 
 /********* Hero section and animation********/
 .titles span {
@@ -570,9 +631,13 @@ vertical-align: middle;
 .row {
 display: grid;
 grid-gap: 10px;
+margin: auto;
 }
 .col-3 {
 grid-template-columns: repeat(3, 1fr);
+width: 95%;
+margin-top: 15px;
+margin-bottom: 15px;
 }
 /* *********End**********/
 
@@ -584,6 +649,7 @@ grid-template-columns: repeat(3, 1fr);
 
     .col-2 {
         grid-template-columns: repeat(2, 1fr);
+        width: 95%;
         }
 
 
