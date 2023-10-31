@@ -327,6 +327,9 @@ flex: 1;
 .center {    text-align: center;}
 .right {    text-align: right;}
 .left {    text-align: left;}
+.bottom {
+    margin-top: auto;
+}
 
 /********* Margin ********/
 .margin-2 {
@@ -593,6 +596,12 @@ grid-template-columns: repeat(3, 1fr);
 width: 95%;
 margin-top: 15px;
 margin-bottom: 15px;
+}
+
+.grid-container {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
 }
 /* *********End**********/
 
