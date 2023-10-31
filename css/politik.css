@@ -108,6 +108,14 @@ main{
   flex-direction: column;
   row-gap: 10px;
   padding: 10px;
+    
+    & a {
+      color: #0000EE;
+    }
+
+    & a:hover {
+      text-decoration: underline;
+    }
 }
 
 
