@@ -124,6 +124,11 @@ footer .container{
     
 }
 
+/* Table on politics page */
+.kommunstyrelse tr:hover{
+    color: #FFFFFF;
+}
+
 @media screen and (min-width: 600px){
 
     .main{
@@ -244,6 +249,18 @@ footer .container{
             font-size: larger;
         }
     }
+
+.history{
+
+    & p{
+    width: 95%;
+    margin: auto;
+    }
+
+    & :nth-child(5){
+        margin-bottom: 10px;
+    }
+}
 
 }
 
