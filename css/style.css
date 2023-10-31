@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 
-/* Index Sidan */
+/* Index */
 :root{
   --light-green: #A7D397;
   --dark-green: #555843;
@@ -13,10 +13,8 @@
 *{ 
     padding: 0;
     margin: 0;
- 
     box-sizing: border-box;
- 
- }
+}
 
 .main{
     display: flex;
@@ -30,10 +28,8 @@
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    
     flex-wrap: wrap;
     row-gap: 50px;
- 
     width: 95%;
 
     & a{
@@ -181,17 +177,7 @@ footer .container{
 }
 
 }
-
-
-
-
-
-/*  ...Utbildning, kultur...  */
-:root {
---background: #eef0f7;
---background-footer: #A7D397;
---color: #434656;
-}
+/*  ...Education, Culture...  */
 
 body {
 margin: 0;
@@ -247,10 +233,7 @@ padding: 0;
     margin-bottom: 10px;
 }
 
-
 /********* Start of Header ********/
-
-
 .header {
 display: flex;
 }
@@ -273,7 +256,7 @@ flex: 1;
 
 /********* background-colors ********/
 .background-green { background-color: #A7D397;}
-.background-green-light { background-color: var(--color-5);}
+.background-green-light { background-color: var(--mild-gray);}
 .background-black {background-color:#000000;}
 .background-white {background-color:#FFFFFF;}
 .background-grey {background-color:#f8f3f8;}
@@ -285,13 +268,9 @@ flex: 1;
 .white {color:#FFFFFF;}
 .grey {color:#f8f3f8;}
 
-
-
 .center {    text-align: center;}
 .right {    text-align: right;}
 .left {    text-align: left;}
-
-
 
 /********* Margin ********/
 .margin-2 {
@@ -366,12 +345,11 @@ font-size: 20px;
 font-size: 22px;
 }
 
-
 .bold {
 font-weight: 900;
 }
 
-/* Länkar start*/
+/* Links start*/
 a:link {
 text-decoration:none;
 color: black;
@@ -384,7 +362,7 @@ a:hover {
     color: black;
 }
 
-/********* Navigations delen ********/
+/********* Navigations part ********/
 .nav-bar {
 display: none;
 position: absolute;
@@ -419,8 +397,6 @@ display: none;
 }
 
 /********* End of the navigation ********/
-
-
 .search {
 height: 40px;
 }
@@ -433,13 +409,10 @@ margin-left: -61px;
 display: block;
 }
 
-
-
 .right button{
     width: 50px;
     cursor: pointer;
 }
-
 
 /********* Hero section and animation********/
 .herobg {
@@ -481,7 +454,6 @@ left: 0;
 right: 0;
 bottom: 0;
 z-index: 0;
-
 }
 
 #heroText:after {
@@ -501,10 +473,6 @@ content: "Staden, Där Framtiden Börjar";
 }
 }
 
-
- 
-
-
 .arbetsansokan-form {
     height: 40px;
     width: 97%;
@@ -514,13 +482,9 @@ content: "Staden, Där Framtiden Börjar";
      width: 98%;
 }
 
-
-
 .img-responsive {
     width: 100%;
 }
-
-
 
 .overlappa-80 {
     margin-top: -40px;
@@ -528,7 +492,7 @@ content: "Staden, Där Framtiden Börjar";
 
 }
 
-/* Hero utbildning */
+/* Hero education */
 .hero-others {
     background-image: url('https://cdn.pixabay.com/photo/2014/03/12/18/45/boys-286245_1280.jpg');
     background-repeat: no-repeat;
@@ -540,26 +504,20 @@ content: "Staden, Där Framtiden Börjar";
     height: 600px;
 }
 
-
-
 .hero-text-others {
     padding: 6px;
     margin-bottom: 100px;
     cursor: default;
 }
 
-
-
 /********* Hero section and animation********/
 .titles span {
 display: none;  /* Hide all by default */
 }
 
-
 .figure_footer {
 margin: 0; padding: 0;
 }
-
 
 .titles .logo {
 vertical-align: middle;
@@ -571,22 +529,19 @@ vertical-align: middle;
 display: grid;
 grid-gap: 10px;
 }
+
 .col-3 {
 grid-template-columns: repeat(3, 1fr);
 }
 /* *********End**********/
 
-
 .titles .large-title {
     display: block;
     }
 
-
     .col-2 {
         grid-template-columns: repeat(2, 1fr);
         }
-
-
 
 .motion, .sport {
 
@@ -625,8 +580,6 @@ grid-template-columns: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
     }
 
-
-
 .herobg {
     height: 300px;
 }
@@ -637,91 +590,70 @@ grid-template-columns: repeat(2, 1fr);
 
 }
 
-
-
 @media screen and (max-width: 992px) {
 
-.titles .large-title {
-display: none;
-}
+    .titles .large-title {
+    display: none;
+    }
 
+    .titles .mobile-title {
+    display: block;
+    }
 
-.titles .mobile-title {
-display: block;
-}
+    #search-form {
+    display:none;
+    }
 
-#search-form {
-display:none;
-}
-.nav a {
-display: none;
-}
-#nav-change + label .nav-bar {
-display: block;
-float: right;
-}
-#nav-change:checked ~ .nav a {
-float: none;
-display: block;
-text-align: left;
-}
-.herobg {
-height: 300px;
-}
-.col-3 {
-grid-template-columns: repeat(1, 1fr);
-}
+    .nav a {
+    display: none;
+    }
 
-.col-2 {
+    #nav-change + label .nav-bar {
+    display: block;
+    float: right;
+    }
+
+    #nav-change:checked ~ .nav a {
+    float: none;
+    display: block;
+    text-align: left;
+    }
+
+    .herobg {
+    height: 300px;
+    }
+
+    .col-3 {
     grid-template-columns: repeat(1, 1fr);
     }
 
-.activities{
-    & .box1, .box2, .box3{
-        width: 100%;
+    .col-2 {
+        grid-template-columns: repeat(1, 1fr);
+        }
+
+    .activities{
+        & .box1, .box2, .box3{
+            width: 100%;
+        }
+
+        & img {
+            object-fit: cover;
+        } 
+
+        & p {
+            margin: 30px auto;
+        }
     }
 
-    & img {
-        object-fit: cover;
-    } 
-
-    & p {
-        margin: 30px auto;
+    #l-j-margin{
+        margin: auto;
+        width: 98%;
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
-}
-
-#l-j-margin{
-    margin: auto;
-    width: 98%;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-
-}
- *{
-    --background: #eef0f7;
-    --background-footer: #A7D397;
-    --color: #434656;
-    /*Added from  kommunDesign.txt */
-    --color-1: #A7D397;
-    --color-2: #555843;
-    --color-3: #F5EEC8;
-    --color-4: #D0D4CA;
-    --color-5: #E8E9E8;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    padding: 0;
 }
 
 /*Style for naringsliv.html*/
-
 .business-life-top-image {
     width: 100%;
     height: 270px;
@@ -733,7 +665,7 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
     width: 95%;
-    background-color: var(--color-5);
+    background-color: var(--mild-gray);
     border-radius: 10px;
     font-family: 'Open Sans', sans-serif;
     padding: 10px;
@@ -768,7 +700,7 @@ body {
 }
 
 .business-life-section {
-    background-color: var(--color-4);
+    background-color: var(--off-white);
     margin: 20px auto;
     padding-bottom: 8px;
         & h2, p, section {
@@ -805,14 +737,14 @@ body {
     height: auto;
     overflow: visible;
     padding: 15px;
-    border: 1px solid var(--color-5);
+    border: 1px solid var(--mild-gray);
     border-top: 0;
     border-bottom-right-radius: 10px;
 }
 
 .accordion .label-decoration {
     display: block;
-    background-color: var(--color-5);
+    background-color: var(--mild-gray);
     padding: 15px;
     border-top-left-radius: 10px;
 }
@@ -860,7 +792,7 @@ body {
 }
 
 input[type=submit] {
-    background-color: var(--color-1);
+    background-color: var(--light-green);
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -884,7 +816,7 @@ input[type=submit]:hover {
     }
 
     .business-life-introduction {
-        width: 100%;
+        width: 80%;
         margin: 0 auto 35px;
     }
 
