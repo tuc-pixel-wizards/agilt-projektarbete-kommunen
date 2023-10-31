@@ -120,17 +120,7 @@ footer .container{
     & img{
         height: 45px;
     }
-
-    & span{
-        color: #0000FF;
-
-    }
-
-        & span:hover{
-            text-decoration: underline;
-        }
     
-
 }
 
 @media screen and (min-width: 600px){
@@ -252,7 +242,7 @@ footer .container{
 
 
 
-/*  ...Utbildning, kultur...  */
+/*  ...Education, culture...  */
 :root {
 --background: #eef0f7;
 --background-footer: #A7D397;
@@ -593,7 +583,7 @@ content: "Staden, Där Framtiden Börjar";
 
 }
 
-/* Utbildning */
+/* Education */
 .hero-others {
     background-image: url('https://cdn.pixabay.com/photo/2014/03/12/18/45/boys-286245_1280.jpg');
     background-repeat: no-repeat;
