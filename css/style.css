@@ -96,6 +96,29 @@ footer .container{
     flex-direction: column;
 }
 
+#learning-platform{
+    background-color: var(--mild-gray);
+    width: 95%;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+
+    & a{
+        display: flex;
+        font-size: 16px;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    & img{
+        height: 45px;
+    }
+    
+}
+
 @media screen and (min-width: 600px){
 
     .main{
@@ -156,6 +179,20 @@ footer .container{
     }
 }
 
+#learning-platform{
+    & a{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+        & img{
+            height: 55px
+        }
+
+        & p{
+            font-size: larger;
+        }
+    }
 }
 
 @media screen and (min-width: 992px){
@@ -176,7 +213,27 @@ footer .container{
     max-width: 1100px;
 }
 
+#learning-platform{
+
+    max-width: 1235px;
+
+    & a{
+        padding-left: 30px;
+        padding-right: 30px;
+        justify-content: center;
+    }
+
+        & img{
+            height: 55px
+        }
+
+        & p{
+            font-size: larger;
+        }
+    }
+
 }
+
 /*  ...Education, Culture...  */
 
 body {
@@ -186,8 +243,7 @@ padding: 0;
 
 .container {
     max-width: 1300px;
-    margin: 0 auto;
-    width: 95%;
+    margin: auto;
     cursor: default;
 
 }
@@ -493,6 +549,7 @@ content: "Staden, Där Framtiden Börjar";
 }
 
 /* Hero education */
+
 .hero-others {
     background-image: url('https://cdn.pixabay.com/photo/2014/03/12/18/45/boys-286245_1280.jpg');
     background-repeat: no-repeat;
@@ -528,10 +585,14 @@ vertical-align: middle;
 .row {
 display: grid;
 grid-gap: 10px;
+margin: auto;
 }
 
 .col-3 {
 grid-template-columns: repeat(3, 1fr);
+width: 95%;
+margin-top: 15px;
+margin-bottom: 15px;
 }
 /* *********End**********/
 
@@ -541,6 +602,7 @@ grid-template-columns: repeat(3, 1fr);
 
     .col-2 {
         grid-template-columns: repeat(2, 1fr);
+        width: 95%;
         }
 
 .motion, .sport {
