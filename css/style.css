@@ -37,10 +37,11 @@
         flex-direction: column;
         align-items: center;
         text-decoration: none;
+        background-color: var(--off-white);
 
         & p, h3{
             padding: 15px;
-            background-color: var(--off-white);
+            
             color: var(--dark-green);
         }
 
@@ -135,6 +136,7 @@ footer .container{
 
         .btn-layout{
             width: 50%;
+            height: 310px;
  
             display: flex;
             justify-content: center;
