@@ -8,10 +8,6 @@ main{
   align-items: center;
 }
 
-.container section:nth-child(1){
-  margin-top: 20px;
-}
-
 .container{
   margin: auto;
   width: 95%;
