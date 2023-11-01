@@ -945,4 +945,8 @@ input[type=submit]:hover {
         bottom: 0;
         width: 100%;
     }
+
+    footer h3 {
+        margin-top: 50px;
+    }
 }
