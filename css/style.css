@@ -957,4 +957,8 @@ input[type=submit]:hover {
     .footer-bottom{
         width: 100%;
     }
+
+    footer h3 {
+        margin-top: 50px;
+    }
 }
