@@ -784,10 +784,7 @@ grid-template-columns: repeat(2, 1fr);
 }
 
 .business-life {
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 95%;
+    margin: 15px;
     background-color: var(--mild-gray);
     border-radius: 10px;
     font-family: 'Open Sans', sans-serif;
@@ -825,18 +822,31 @@ grid-template-columns: repeat(2, 1fr);
     background-color: var(--off-white);
     margin: 20px auto;
     padding-bottom: 8px;
-        & h2, p, section {
+        & h2, p, section, li {
             padding: 0 10px;
         }
 
-        & p{
+        & p, li {
             margin-bottom: 10px;
+        }
+
+        & ul {
+            padding-left: 30px;
         }
 }
 
-.business-life-section-ul {
-    margin-left: 20px;
+.row-1 {
+    min-height: 675px;
 }
+
+.row-2 {
+    min-height: 770px;
+}
+
+.row-3 {
+    min-height: 653px;
+}
+
 .business-life-image {
     display: block;
     width: 100%;
@@ -949,7 +959,7 @@ input[type=submit]:hover {
     }
 
     .business-life-section {
-        width: 800px;
+        width: 600px;
         margin: 20px auto;
     }
 
