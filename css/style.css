@@ -21,6 +21,11 @@
     justify-content: center;
 }
 
+h1{
+    font-size: 35px;
+}
+
+
 #main-btns{
     display: flex;
     flex-direction: column;
@@ -119,11 +124,20 @@ footer .container{
     
 }
 
+/* Table on politics page */
+.kommunstyrelse tr:hover{
+    color: #FFFFFF;
+}
+
 @media screen and (min-width: 600px){
 
     .main{
         width: 100%;
    }
+
+   h1{
+    font-size: 45px;
+    }
 
     #main-btns{
         flex-direction: row;
@@ -198,6 +212,10 @@ footer .container{
 @media screen and (min-width: 992px){
  
 
+    h1{
+        font-size: 55px;
+        }
+
     #main-btns .btn-layout{
         width: 33%;
 }
@@ -231,6 +249,18 @@ footer .container{
             font-size: larger;
         }
     }
+
+.history{
+
+    & p{
+    width: 95%;
+    margin: auto;
+    }
+
+    & :nth-child(5){
+        margin-bottom: 10px;
+    }
+}
 
 }
 
@@ -741,7 +771,6 @@ grid-template-columns: repeat(2, 1fr);
     font-family: 'Open Sans', sans-serif;
     padding: 10px;
         & h1 {
-            font-size: 50px;
             text-align: center;
             margin-bottom: 10px;
             cursor: default;
