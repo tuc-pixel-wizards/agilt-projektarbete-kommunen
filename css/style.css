@@ -951,7 +951,7 @@ input[type=submit]:hover {
     }
 
     .business-life-section {
-        width: 600px;
+        min-width: 600px;
         margin: 20px auto;
     }
 
