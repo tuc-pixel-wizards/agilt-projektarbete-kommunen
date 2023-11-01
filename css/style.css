@@ -101,7 +101,7 @@ footer .container{
     flex-direction: column;
 }
 
-#learning-platform{
+#learning-platform, #learning-platform-2{
     background-color: var(--mild-gray);
     width: 95%;
     margin: auto;
