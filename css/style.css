@@ -634,6 +634,12 @@ vertical-align: middle;
 display: grid;
 grid-gap: 10px;
 margin: auto;
+
+    & div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
 
 .col-3 {

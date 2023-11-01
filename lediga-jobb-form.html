@@ -57,30 +57,25 @@
        <a href="naringsliv.html">  <span class="font bold"> Näringsliv </span></a>
         <a href="politik.html">  <span class="font bold"> Kommun & Politik </span></a>
         <a href="lediga-jobb.html">  <span class="font bold">   Lediga jobb  </span></a>
-        <span class="nav-bar"><span class="material-symbols-outlined bold">  menu  </span>    </span>
+        <span class="nav-bar"><span class="material-symbols-outlined bold">  menu  </span></span>
 
       </label>
   </div>
 </nav>
 
+ <main class="container margin-t-b">
+  <section class="container">
+    <div class="container shadow-s center margin-6 rounded-m padding-2 font">
+  
+        <h1 class="padding-6 font-size-20 bold">Arbetsansökan</h1>
+          <div class="padding-6 font-size-16 font center">
+            Stort tack för visat intresse för det lediga tjänsten.<br>
+            Vänligen fylla i formuläret nedan.
+          </div>
+        <br>
+    </div>
+   </section>
 
-
-<section class="container">
-  <div class="container shadow-s center margin-6 rounded-m padding-2 font">
-
-      <h1 class="padding-6 font-size-20 bold">Arbetsansökan</h1>
-        <div class="padding-6 font-size-16 font center">
-          Stort tack för visat intresse för det lediga tjänsten.<br>
-          Vänligen fylla i formuläret nedan.
-        </div>
-      <br>
-  </div>
- </section>
-
-
-
-
- <main class="container">
     <div class="container">
         <form action="lediga_jobb_form.html" method="post" class="container shadow-s rounded-m margin-6  padding-6">
 
@@ -90,29 +85,30 @@
 <div class="row col-3 margin-6">
 
     <div>
-         <label class="bold padding-4 margin-6"> Namn: </label>
+         <label class="padding-4 margin-6 font"> Namn: </label>
         <input class="arbetsansokan-form rounded-m" type="text" name="namn" id="name" required>
     </div>
 
     <div>
-        <label class="bold padding-4 margin-6"> Telefon: </label>
+        <label class="padding-4 margin-6 font"> Telefon: </label>
         <input class="arbetsansokan-form rounded-m"  type="text" id="telefon" name="telefon" required>
     </div>
 
 
     <div>
-        <label class="bold padding-4 margin-6">Email: </label>
+        <label class="padding-4 margin-6 font">Email: </label>
         <input class="arbetsansokan-form rounded-m"  type="email" id="email" name="Email" required>
     </div>
 
 </div>
 
 <br>
+<br>
         <!-- First row  -->
         <div class="row col-3 margin-6">
 
             <div>
-                <label class="bold" for="experience"> Välj antal års arbetslivserfarenheter </label>
+                <label class="font" for="experience"> Välj antal års arbetslivserfarenhet: </label>
 
                 <select name="experience" id="experience" class="arbetsansokan-form rounded-m background-white">
                 <option value="1">1</option>
@@ -124,7 +120,7 @@
             </div>
 
             <div>
-                <label class="bold" for="prevwork">   Har du  varit anställd av Grönviksdals kommun tidigare?</label>
+                <label class="font" for="prevwork">   Har du  varit anställd av Grönviksdals kommun tidigare?</label>
                 <select name="prevwork" id="prevwork" class="arbetsansokan-form rounded-m background-white">
                 <option value="Ja">Ja</option>
                 <option value="Nej">Nej</option>
@@ -133,7 +129,7 @@
 
 
             <div>
-                <label class="bold" for="driver-license"> Har du körtkort? </label>
+                <label class="font" for="driver-license"> Har du körtkort? </label>
                 <select name="driver-license" id="driver-license" class="arbetsansokan-form rounded-m background-white">
                 <option value="Ja">Ja</option>
                 <option value="Nej">Nej</option>
@@ -145,9 +141,9 @@
         <br>
 
         <div class="padding-6 margin-6">
-            <label class="bold">
+            <label class="font">
 
-Skriv din personliga brev här:</label>
+Skriv ditt personliga brev här:</label>
 
             <textarea  class="arbetsansokan-form-textarea rounded-m padding-6" rows="20" cols="40"></textarea>
        </div>
@@ -156,7 +152,7 @@ Skriv din personliga brev här:</label>
 
 
     <div class="padding-6 margin-6">
-    <button class="arbetsansokan-form rounded-m   shadow-s margin-6 rounded-m background-blue white bold border-0 font-size-16"  type="submit" > Skicka ansökan </button>
+    <button class="arbetsansokan-form rounded-m   shadow-s margin-6 rounded-m background-blue white bold border-0 font-size-16 font"  type="submit" > Skicka ansökan </button>
     </div>
 
     </form>
