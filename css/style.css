@@ -221,6 +221,11 @@ footer .container{
     #main-btns .btn-layout{
         width: 33%;
 }
+  
+.active{
+    background-color:#555843;
+     
+   }
 
 #news-feed{
     max-width: 700px;
