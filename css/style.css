@@ -597,6 +597,11 @@ content: "Staden, Där Framtiden Börjar";
 
 }
 
+#free-jobs-width{
+    margin: auto;
+    width: 93%;
+}
+
 /* Hero education */
 
 .hero-others {
