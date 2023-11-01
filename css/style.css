@@ -306,6 +306,19 @@ padding: 0;
     }
 }
 
+.culture-school {
+    text-align: center;
+}
+
+.culture-school, p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#video-culture {
+    width: 100%;
+}
+
 .h3-margin-bottom{
     margin-bottom: 20px;
 }
