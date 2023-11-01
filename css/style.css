@@ -224,7 +224,7 @@ footer .container{
   
 .active{
     background-color:#555843;
-     
+     border-radius: 5%;
    }
 
 #news-feed{
