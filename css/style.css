@@ -599,7 +599,7 @@ margin-bottom: 15px;
 }
 
 .grid-container {
-    height: 200px;
+    height: 180px;
     display: flex;
     flex-direction: column;
 }
