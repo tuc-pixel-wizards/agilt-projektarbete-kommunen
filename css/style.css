@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-
 /* Index */
 :root{
   --light-green: #A7D397;
@@ -608,7 +607,6 @@ content: "Staden, Där Framtiden Börjar";
 }
 
 /* Hero education */
-
 .hero-others {
     background-image: url('https://cdn.pixabay.com/photo/2014/03/12/18/45/boys-286245_1280.jpg');
     background-repeat: no-repeat;
@@ -695,8 +693,6 @@ position: static;
         text-decoration: underline;
     }
 }
-
-
 
 @media screen and (max-width: 992px) {
 
@@ -817,6 +813,8 @@ position: static;
     background-color: var(--off-white);
     margin: 20px auto;
     padding-bottom: 8px;
+    display: flex;
+    flex-direction: column;
         & h2, p, section, li {
             padding: 0 10px;
         }
@@ -878,7 +876,6 @@ position: static;
 
 .accordion {
     margin-bottom: 10px;
-
     & :hover{
         cursor: pointer;
     }
